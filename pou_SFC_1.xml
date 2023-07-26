@@ -11,7 +11,7 @@
             </var>
          </vargroup>
 <defines name="SFC_1"></defines>
-         <sourceSFC sx="1" sy="5">
+         <sourceSFC sx="1" sy="8">
             <SFCstep kind="init" dx="0" dy="0" ref="1" name="GS1" next="GT1">
                <SFCnote ref="1" dx="0" dy="0">inactive:
 nothing done
@@ -65,7 +65,7 @@ nothing done
                   </sourceFBD>
                </SFCaction>
             </SFCstep>
-            <SFCtrans dx="0" dy="3" ref="2" name="GT2" next="GS1">
+            <SFCtrans dx="0" dy="3" ref="2" name="GT2" next="GS3">
                <SFCnote ref="2" dx="0" dy="3">deactivate
                </SFCnote>
                <SFCcondition>
@@ -77,7 +77,12 @@ nothing done
                   </sourceLD>
                </SFCcondition>
             </SFCtrans>
-            <SFCjump dx="0" dy="4" ref="1" target="GS1"/>
+            <SFCstep kind="default" dx="0" dy="4" ref="3" name="GS3" next="GT4">
+            </SFCstep>
+            <SFCtrans dx="0" dy="5" ref="4" name="GT4" next="GS1">
+            </SFCtrans>
+            <SFCjump dx="0" dy="7" ref="1" target="GS1"/>
+            <SFClines dx="0" dy="6" vtop="1" vbottom="1" hleft="0" hright="0" dbline="0" cross="0"/>
          </sourceSFC>
       </pou>
    </programs>
