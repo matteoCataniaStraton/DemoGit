@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<K5project version="1.1">
+   <networks>
+   </networks>
+   <fieldbus>
+      <K5BusShm2 K5ID="1" __F="-17">
+         <fieldbusmaster K5ID="2" NAME="SharedMemo" SIZE="1024" MODE="1" MUTEX="1" DESC="" __F="-1">
+            <fieldbusslave K5ID="3" DESC="Group" __F="-1">
+               <fieldbusvar K5ID="4" NAME="FBD_1/bCommand" OFFSET="0" SIZE="1" FORMAT="0" MODE="0" __F="-1"/>
+               <fieldbusvar K5ID="5" NAME="FBD_1/tPerio" OFFSET="1" SIZE="4" FORMAT="0" MODE="0" __F="-1"/>
+               <fieldbusvar K5ID="6" NAME="FBD_1/bFast" OFFSET="100" SIZE="1" FORMAT="0" MODE="1" __F="-1"/>
+            </fieldbusslave>
+         </fieldbusmaster>
+      </K5BusShm2>
+   </fieldbus>
+</K5project>

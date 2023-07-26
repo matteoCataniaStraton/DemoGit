@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<K5project version="1.1">
+   <networks>
+      <modbus>
+         <modbusport kind="slave" unit="1" address="">
+            <modbusreq name="holding group" mode="Input Bits" address="0" nbitem="1">
+               <modbusitem ope="Server" offset="0" symbol="bool1" nbword="1" mask="ffff" RangeHi="" RangeLo="" SigHi="" SigLo=""/>
+            </modbusreq>
+         </modbusport>
+      </modbus>
+   </networks>
+   <fieldbus>
+   </fieldbus>
+</K5project>
